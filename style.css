@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #282828;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+header {
+    background-color: #282828;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #282828;
+}
+
+#profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ecf0f1;
+    margin-right: 20px;
+}
+
+.header-info {
+    max-width: 600px;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.header-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #282828;
+    padding-bottom: 10px;
+    color: #282828;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #282828;
+}
+
+.job p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #282828;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #282828;
+}
+
+#skills-content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #profile-pic {
+        width: 100px;
+        height: 100px;
+        margin: 0 0 10px 0;
+    }
+
+    .header-info h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
